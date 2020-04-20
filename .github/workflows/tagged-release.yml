@@ -2,7 +2,8 @@
 name: "tagged-release"
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     tags:
       - "v*"
 
